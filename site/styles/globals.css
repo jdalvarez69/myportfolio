@@ -1,0 +1,13 @@
+:root{
+  --bg: #ffffff;
+  --muted: #6b7280;
+  --accent: #0ea5a4;
+}
+html,body,#__next{height:100%;}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#111827}
+a{color:inherit}
+.container{max-width:1080px;margin:0 auto;padding:24px}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.cta-btn{background:var(--accent);color:white;padding:10px 16px;border-radius:6px;text-decoration:none}
+.hero{padding:48px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}

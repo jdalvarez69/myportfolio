@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="600" height="360" fill="#ffffff"/>
+  <g fill="#e6f6f6">
+    <rect x="28" y="28" width="544" height="120" rx="8"/>
+    <rect x="28" y="164" width="260" height="140" rx="8"/>
+    <rect x="300" y="164" width="272" height="140" rx="8"/>
+  </g>
+  <text x="32" y="180" fill="#6b7280" font-family="Helvetica, Arial" font-size="18">Demo placeholder</text>
+</svg>

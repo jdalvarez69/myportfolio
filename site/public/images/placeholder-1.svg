@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#f3f4f6"/>
+  <g fill="#9ca3af">
+    <rect x="56" y="56" width="240" height="160" rx="8"/>
+    <rect x="320" y="56" width="400" height="80" rx="8"/>
+    <rect x="320" y="160" width="260" height="56" rx="8"/>
+  </g>
+  <text x="56" y="260" fill="#6b7280" font-family="Helvetica, Arial" font-size="20">Placeholder image — demo screenshot</text>
+</svg>
