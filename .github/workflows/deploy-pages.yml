@@ -38,6 +38,10 @@ jobs:
       - name: Build static export
         run: npm run build
         working-directory: site
+        env:
+          NEXT_PUBLIC_FORMSPREE_ENDPOINT: ${{ vars.NEXT_PUBLIC_FORMSPREE_ENDPOINT }}
+          NEXT_PUBLIC_CALENDLY_URL: ${{ vars.NEXT_PUBLIC_CALENDLY_URL }}
+          NEXT_PUBLIC_HUBSPOT_MEETING_URL: ${{ vars.NEXT_PUBLIC_HUBSPOT_MEETING_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

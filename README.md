@@ -29,3 +29,4 @@ Then open `http://localhost:3000`.
   - `NEXT_PUBLIC_FORMSPREE_ENDPOINT`
   - `NEXT_PUBLIC_CALENDLY_URL`
   - `NEXT_PUBLIC_HUBSPOT_MEETING_URL`
+- For GitHub Pages builds, set these in GitHub → Settings → Secrets and variables → Actions → Variables (Repository variables).
