@@ -2,6 +2,9 @@ import Link from 'next/link'
 import SEO from '../components/SEO'
 
 export default function Home(){
+  const headshot = '/images/headshot.jpg'
+  const fallback = '/images/placeholder-2.svg'
+
   return (
     <>
       <SEO />
@@ -14,7 +17,14 @@ export default function Home(){
           </p>
         </div>
         <div className="hero-right">
-          <img src="/images/headshot.jpg" alt="Headshot" className="headshot" />
+          <img
+            src={headshot}
+            alt="Headshot"
+            className="headshot"
+            onError={(event)=>{
+              event.currentTarget.src = fallback
+            }}
+          />
         </div>
 
       </section>

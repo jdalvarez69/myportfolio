@@ -1,9 +1,20 @@
 export default function About(){
+  const headshot = '/images/headshot.jpg'
+  const fallback = '/images/placeholder-2.svg'
+
   return (
     <section className="container" style={{paddingTop:32}}>
       <div style={{display:'flex',gap:24,alignItems:'center',flexWrap:'wrap'}}>
         <div style={{flex:'0 0 160px'}}>
-          <img src="/images/headshot.jpg" alt="Headshot" className="headshot" style={{width:160,height:160}} />
+          <img
+            src={headshot}
+            alt="Headshot"
+            className="headshot"
+            style={{width:160,height:160}}
+            onError={(event)=>{
+              event.currentTarget.src = fallback
+            }}
+          />
         </div>
         <div style={{flex:1}}>
           <h1>About</h1>
