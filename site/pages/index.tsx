@@ -9,7 +9,7 @@ export default function Home(){
         <h1>Automation & Dashboards for Small Businesses</h1>
         <p style={{color:'#6b7280'}}>I build simple automations, dashboards, and CRM flows that save time and increase revenue.</p>
         <p style={{marginTop:20}}>
-          <Link href="/contact"><a className="cta-btn">Book a free 20‑minute Automation Audit</a></Link>
+          <Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link>
         </p>
         <section style={{marginTop:40}}>
           <h2>Starter Projects</h2>
