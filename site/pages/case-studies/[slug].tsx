@@ -18,7 +18,7 @@ export default function CaseStudy({htmlContent, data}:{htmlContent:string; data:
 
 export const getStaticPaths:GetStaticPaths = async ()=>{
   const dir = path.join(process.cwd(),'content','case-studies')
-  const files = fs.readdirSync(dir).filter(f=>f.endsWith('.md'))
+  const files = fs.readdirSync(dir).filter(f=>f.endsWith('.md') && f.toLowerCase() !== 'readme.md')
   const paths = files.map(f=>({params:{slug:f.replace('.md','')}}))
   return {paths,fallback:false}
 }
