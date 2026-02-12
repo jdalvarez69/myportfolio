@@ -1,9 +1,12 @@
 import Link from 'next/link'
+import {useRouter} from 'next/router'
 import SEO from '../components/SEO'
 
 export default function Home(){
-  const headshot = '/images/headshot.jpg'
-  const fallback = '/images/placeholder-2.svg'
+  const router = useRouter()
+  const basePath = router.basePath || ''
+  const headshot = `${basePath}/images/headshot.jpg`
+  const fallback = `${basePath}/images/placeholder-2.svg`
 
   return (
     <>

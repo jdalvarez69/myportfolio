@@ -1,6 +1,11 @@
+import Link from 'next/link'
+import {useRouter} from 'next/router'
+
 export default function About(){
-  const headshot = '/images/headshot.jpg'
-  const fallback = '/images/placeholder-2.svg'
+  const router = useRouter()
+  const basePath = router.basePath || ''
+  const headshot = `${basePath}/images/headshot.jpg`
+  const fallback = `${basePath}/images/placeholder-2.svg`
 
   return (
     <section className="container" style={{paddingTop:32}}>
@@ -20,7 +25,7 @@ export default function About(){
           <h1>About</h1>
           <p className="lead">I'm a Business & Information Systems student focused on building practical automation, dashboards, and CRM integrations for small businesses. I prioritize fast wins that reduce manual work and deliver measurable outcomes.</p>
           <p style={{marginTop:12}}>Approachable, focused, and results-driven — I work with business owners to identify quick automation opportunities and deliver polished, maintainable solutions.</p>
-          <p style={{marginTop:12}}><a href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</a></p>
+          <p style={{marginTop:12}}><Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link></p>
         </div>
       </div>
     </section>
