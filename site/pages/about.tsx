@@ -1,8 +1,17 @@
 export default function About(){
   return (
     <section className="container" style={{paddingTop:32}}>
-      <h1>About</h1>
-      <p style={{color:'#6b7280'}}>I'm a Business & Information Systems student building practical automation and dashboard solutions for SMBs.</p>
+      <div style={{display:'flex',gap:24,alignItems:'center',flexWrap:'wrap'}}>
+        <div style={{flex:'0 0 160px'}}>
+          <img src="/images/headshot.jpg" alt="Headshot" className="headshot" style={{width:160,height:160}} />
+        </div>
+        <div style={{flex:1}}>
+          <h1>About</h1>
+          <p className="lead">I'm a Business & Information Systems student focused on building practical automation, dashboards, and CRM integrations for small businesses. I prioritize fast wins that reduce manual work and deliver measurable outcomes.</p>
+          <p style={{marginTop:12}}>Approachable, focused, and results-driven — I work with business owners to identify quick automation opportunities and deliver polished, maintainable solutions.</p>
+          <p style={{marginTop:12}}><a href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</a></p>
+        </div>
+      </div>
     </section>
   )
 }

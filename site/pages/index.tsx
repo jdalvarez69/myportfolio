@@ -6,28 +6,35 @@ export default function Home(){
     <>
       <SEO />
       <section className="container hero">
-        <h1>Automation & Dashboards for Small Businesses</h1>
-        <p style={{color:'#6b7280'}}>I build simple automations, dashboards, and CRM flows that save time and increase revenue.</p>
-        <p style={{marginTop:20}}>
-          <Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link>
-        </p>
-        <section style={{marginTop:40}}>
-          <h2>Starter Projects</h2>
-          <div className="grid">
-            <div style={{padding:16,border:'1px solid #e5e7eb',borderRadius:8}}>
-              <h3>Invoice Automation</h3>
-              <p style={{color:'#6b7280'}}>Auto-generate and email invoices from Google Sheets.</p>
-            </div>
-            <div style={{padding:16,border:'1px solid #e5e7eb',borderRadius:8}}>
-              <h3>Sales Dashboard</h3>
-              <p style={{color:'#6b7280'}}>A clean dashboard summarizing sales and KPIs.</p>
-            </div>
-            <div style={{padding:16,border:'1px solid #e5e7eb',borderRadius:8}}>
-              <h3>Lead → CRM Flow</h3>
-              <p style={{color:'#6b7280'}}>Capture leads and push them to HubSpot or Pipedrive.</p>
-            </div>
+        <div className="hero-left">
+          <h1>Automation & Dashboards for Small Businesses</h1>
+          <p className="lead">I build practical automations, dashboards, and CRM flows that save time and improve decision-making for small businesses.</p>
+          <p style={{marginTop:22}}>
+            <Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link>
+          </p>
+        </div>
+        <div className="hero-right">
+          <img src="/images/headshot.jpg" alt="Headshot" className="headshot" />
+        </div>
+
+      </section>
+
+      <section className="container" style={{paddingBottom:48}}>
+        <h2 style={{marginTop:8}}>Starter Projects</h2>
+        <div className="grid">
+          <div className="card">
+            <h3>Invoice Automation</h3>
+            <p className="lead">Auto-generate PDF invoices from Google Sheets and email clients automatically.</p>
           </div>
-        </section>
+          <div className="card">
+            <h3>Sales Dashboard</h3>
+            <p className="lead">A clean dashboard summarizing revenue, top products, and monthly trends.</p>
+          </div>
+          <div className="card">
+            <h3>Lead → CRM Flow</h3>
+            <p className="lead">Capture leads and push them to HubSpot or Pipedrive with follow-up automation.</p>
+          </div>
+        </div>
       </section>
     </>
   )
