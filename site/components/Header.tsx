@@ -9,6 +9,7 @@ export default function Header(){
         </Link>
       </div>
       <nav className="nav-links">
+        <Link href="/about" className="nav-link">About</Link>
         <Link href="/services" className="nav-link">Services</Link>
         <Link href="/case-studies" className="nav-link">Case Studies</Link>
         <Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link>
