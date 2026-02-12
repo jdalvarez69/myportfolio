@@ -8,24 +8,25 @@ export default function About(){
   const fallback = `${basePath}/images/placeholder-2.svg`
 
   return (
-    <section className="container" style={{paddingTop:32}}>
-      <div style={{display:'flex',gap:24,alignItems:'center',flexWrap:'wrap'}}>
-        <div style={{flex:'0 0 160px'}}>
+    <section className="container section">
+      <div className="two-col" style={{alignItems:'center'}}>
+        <div style={{display:'flex',justifyContent:'center'}}>
           <img
             src={headshot}
             alt="Headshot"
             className="headshot"
-            style={{width:160,height:160}}
+            style={{width:190,height:190}}
             onError={(event)=>{
               event.currentTarget.src = fallback
             }}
           />
         </div>
-        <div style={{flex:1}}>
+        <div className="card">
           <h1>About</h1>
-          <p className="lead">I'm a Business & Information Systems student focused on building practical automation, dashboards, and CRM integrations for small businesses. I prioritize fast wins that reduce manual work and deliver measurable outcomes.</p>
-          <p style={{marginTop:12}}>Approachable, focused, and results-driven — I work with business owners to identify quick automation opportunities and deliver polished, maintainable solutions.</p>
+          <p className="lead">I help SMB owners remove repetitive tasks, clean up operations, and make faster decisions with practical systems.</p>
+          <p className="lead">My approach is simple: identify one high-impact bottleneck, ship a clean solution quickly, and make sure your team can run it without friction.</p>
           <p style={{marginTop:12}}><Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link></p>
+          <p className="cta-subtext">No pressure — you leave with concrete next steps.</p>
         </div>
       </div>
     </section>

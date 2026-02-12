@@ -4,24 +4,24 @@ export default function Contact(){
   const hubspotMeetingUrl = process.env.NEXT_PUBLIC_HUBSPOT_MEETING_URL || 'https://meetings.hubspot.com/'
 
   return (
-    <section className="container" style={{paddingTop:32}}>
+    <section className="container section">
       <h1>Contact — Book a free 20‑minute Automation Audit</h1>
-      <p style={{color:'#6b7280'}}>Complete this form and I'll follow up to schedule the audit.</p>
-      <form style={{maxWidth:640,marginTop:16}} method="POST" action={formAction}>
+      <p className="lead">Tell me your bottleneck. I’ll reply with a practical next step.</p>
+      <form className="form-shell" style={{maxWidth:700,marginTop:16}} method="POST" action={formAction}>
         <label style={{display:'block',marginTop:12}}>Name</label>
-        <input name="name" placeholder="Your name" style={{width:'100%',padding:8}} />
+        <input name="name" placeholder="Your name" />
 
         <label style={{display:'block',marginTop:12}}>Company</label>
-        <input name="company" placeholder="Company name" style={{width:'100%',padding:8}} />
+        <input name="company" placeholder="Company name" />
 
         <label style={{display:'block',marginTop:12}}>Email</label>
-        <input name="email" type="email" placeholder="you@company.com" style={{width:'100%',padding:8}} />
+        <input name="email" type="email" placeholder="you@company.com" />
 
         <label style={{display:'block',marginTop:12}}>Website (optional)</label>
-        <input name="website" placeholder="https://" style={{width:'100%',padding:8}} />
+        <input name="website" placeholder="https://" />
 
         <label style={{display:'block',marginTop:12}}>Budget range (optional)</label>
-        <select name="budget" style={{width:'100%',padding:8}}>
+        <select name="budget">
           <option>Under $500</option>
           <option>$500–$1,500</option>
           <option>$1,500–$5,000</option>
@@ -29,18 +29,19 @@ export default function Contact(){
         </select>
 
         <div style={{marginTop:16}}>
-          <button className="cta-btn" type="submit">Request audit</button>
+          <button className="cta-btn" type="submit">Get my free audit plan</button>
         </div>
+        <p className="cta-subtext">Average response time: under 24 hours.</p>
       </form>
 
       <div className="card" style={{maxWidth:640, marginTop:18}}>
         <h3 style={{marginTop:0}}>Prefer booking directly?</h3>
-        <p className="lead">Use a scheduling link below. These are optional third-party integrations you can enable now or later.</p>
+        <p className="lead">Pick your preferred scheduler.</p>
         <p style={{marginTop:12}}>
-          <a className="cta-btn" href={calendlyUrl} target="_blank" rel="noreferrer">Open Calendly</a>
+          <a className="cta-btn" href={calendlyUrl} target="_blank" rel="noreferrer">Book via Calendly</a>
         </p>
         <p style={{marginTop:12}}>
-          <a href={hubspotMeetingUrl} target="_blank" rel="noreferrer">Book via HubSpot Meetings</a>
+          <a className="nav-link" style={{paddingLeft:0}} href={hubspotMeetingUrl} target="_blank" rel="noreferrer">Book via HubSpot Meetings →</a>
         </p>
       </div>
 

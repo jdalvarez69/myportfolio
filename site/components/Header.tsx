@@ -5,12 +5,12 @@ export default function Header(){
     <header className="site-header container">
       <div>
         <Link href="/">
-          <strong>MyPortfolio</strong>
+          <strong className="brand">Jorge Alvarez · Automation</strong>
         </Link>
       </div>
-      <nav>
-        <Link href="/services" style={{marginRight:12}}>Services</Link>
-        <Link href="/case-studies" style={{marginRight:12}}>Case Studies</Link>
+      <nav className="nav-links">
+        <Link href="/services" className="nav-link">Services</Link>
+        <Link href="/case-studies" className="nav-link">Case Studies</Link>
         <Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link>
       </nav>
     </header>

@@ -8,10 +8,13 @@ import html from 'remark-html'
 
 export default function CaseStudy({htmlContent, data}:{htmlContent:string; data:any}){
   return (
-    <section className="container" style={{paddingTop:32}}>
+    <section className="container section">
       <SEO title={data?.Title || 'Case Study'} description={data?.summary || 'Case study'} />
-      <h1>{data?.Title || 'Case Study'}</h1>
-      <div dangerouslySetInnerHTML={{__html:htmlContent}} style={{color:'#374151'}} />
+      <div className="card" style={{maxWidth:820}}>
+        <h1>{data?.Title || 'Case Study'}</h1>
+        <p className="lead" style={{marginTop:8}}>{data?.summary || 'Practical automation and dashboard implementation.'}</p>
+        <div dangerouslySetInnerHTML={{__html:htmlContent}} style={{color:'#374151'}} />
+      </div>
     </section>
   )
 }

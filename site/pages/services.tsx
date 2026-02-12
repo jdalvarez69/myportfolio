@@ -1,28 +1,47 @@
+import Link from 'next/link'
+
 export default function Services(){
   return (
-    <section className="container" style={{paddingTop:32}}>
+    <section className="container section">
       <h1>Services</h1>
-      <p style={{color:'#6b7280'}}>Productized packages and monthly retainers for small businesses.</p>
+      <p className="lead">Productized offers designed for fast delivery and measurable outcomes.</p>
 
-      <h2 style={{marginTop:24}}>Starter Pack — Fixed Scope</h2>
-      <ul>
-        <li>One automation or simple dashboard</li>
-        <li>Deliverable in 1–2 weeks</li>
-        <li>Starting at $500</li>
-      </ul>
+      <div className="grid">
+        <div className="card">
+          <h3>Starter Pack</h3>
+          <p className="lead">One focused automation or dashboard in 1–2 weeks.</p>
+          <ul className="list-clean">
+            <li>Fixed scope</li>
+            <li>Fast implementation</li>
+            <li>From $500</li>
+          </ul>
+        </div>
 
-      <h2 style={{marginTop:24}}>Advanced Build</h2>
-      <ul>
-        <li>Custom integrations, dashboards, or AI assistant</li>
-        <li>Deliverable in 2–6 weeks</li>
-        <li>Starting at $1,200</li>
-      </ul>
+        <div className="card">
+          <h3>Advanced Build</h3>
+          <p className="lead">Custom integrations, analytics workflows, or AI-assisted tooling.</p>
+          <ul className="list-clean">
+            <li>2–6 week delivery</li>
+            <li>Business-first requirements</li>
+            <li>From $1,200</li>
+          </ul>
+        </div>
 
-      <h2 style={{marginTop:24}}>Monthly Retainer</h2>
-      <ul>
-        <li>Ongoing maintenance, monitoring, and small improvements</li>
-        <li>Starting at $200/month</li>
-      </ul>
+        <div className="card">
+          <h3>Monthly Retainer</h3>
+          <p className="lead">Ongoing optimization, monitoring, and incremental improvements.</p>
+          <ul className="list-clean">
+            <li>Priority support</li>
+            <li>Roadmap iteration</li>
+            <li>From $200/month</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style={{marginTop:18}}>
+        <Link href="/contact" className="cta-btn">Book a free 20‑minute Automation Audit</Link>
+      </p>
+      <p className="cta-subtext">We’ll identify the highest-ROI automation to build first.</p>
     </section>
   )
 }
