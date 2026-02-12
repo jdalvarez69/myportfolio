@@ -10,13 +10,13 @@
     "generate-pdf": "node scripts/generate-pdf.js"
   },
   "dependencies": {
-    "next": "13.4.7",
+    "next": "14.2.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "gray-matter": "^4.0.3",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "puppeteer": "^21.3.8"
+    "puppeteer": "^24.37.2"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
