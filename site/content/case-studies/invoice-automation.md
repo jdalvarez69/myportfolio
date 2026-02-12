@@ -1,4 +1,7 @@
-Title: Invoice Automation
+---
+Title: "Invoice Automation"
+summary: "Auto-generate PDF invoices from Google Sheets."
+---
 
 Problem:
 Small businesses spend hours creating and emailing invoices from spreadsheets.

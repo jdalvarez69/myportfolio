@@ -10,6 +10,7 @@ npm install
 npm run dev
 ```
 
+
 Generate the PDF checklist (requires dependencies including `puppeteer`):
 
 ```bash
