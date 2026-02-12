@@ -10,7 +10,7 @@ export default function SEO({title,description}:{title?:string;description?:stri
       <title>{title? `${title} — ${siteTitle}`:siteTitle}</title>
       <meta name="description" content={description||'I build automations, dashboards, and CRM flows for small businesses.'} />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <link rel="icon" href={`${basePath}/favicon.ico`} />
+      <link rel="icon" type="image/svg+xml" href={`${basePath}/favicon.svg`} />
     </Head>
   )
 }
